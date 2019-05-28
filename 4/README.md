@@ -26,7 +26,7 @@ git checkout -b <NAME>
 
 ##### 三种合并方式，及其区别
 
-> 快进合并(fast-forward)，合并后无历史分支记录，但有commit记录
+> 快进合并模式(fast-forward)，合并后无历史分支记录，但有commit记录
 
 ``` base
 git merge <NAME>
