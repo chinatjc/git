@@ -49,7 +49,8 @@ git merge --squash <NAME>
 ``` base
 git branch -D <NAME>
 
-// 批量删除
+// 批量删除分支
+git branch | grep -v '<NOT DELETE BRANCH NAME>' | xargs git branch -D
 ```
 
 ##### 恢复被删除的分支
