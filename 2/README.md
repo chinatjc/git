@@ -114,13 +114,13 @@ git rm <FILE>
 ##### 彻底删除某个文件
 
 ``` base
-// 从版本库删除文件，删除文件路径是相对于.git的
+从版本库删除文件，删除文件路径是相对于.git的
 git filter-branch --force --index-filter 'git rm --cached --ignore-unmatch <PATH OF NEED TO DELETE FILE>' --prune-empty --tag-name-filter cat -- --all
 
-// 强制推送删除文件后的版本库
+强制推送删除文件后的版本库
 git push origin master --force
 
-// 清理和回收空间
+清理和回收空间
 rm -rf .git/refs/original/
 
 git reflog expire --expire=now --all
