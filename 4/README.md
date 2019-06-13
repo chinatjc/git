@@ -48,6 +48,17 @@ git merge --squash <NAME>
 
 ``` base
 git branch -D <NAME>
+
+// 批量删除
+```
+
+##### 恢复被删除的分支
+
+``` base
+// 找到删除分支对应的commit id
+git reflog
+
+git branch <DELET_BRANCH_NAME> <DELET_BRANCH_COMMIT_ID>
 ```
 
 ##### 查看代码中的冲突代码
